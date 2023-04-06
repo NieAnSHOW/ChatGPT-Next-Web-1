@@ -70,30 +70,30 @@ export const ROLES: Message["role"][] = ["system", "user", "assistant"];
 const ENABLE_GPT4 = true;
 
 export const ALL_MODELS = [
-  {
-    name: "gpt-4",
-    available: ENABLE_GPT4,
-  },
-  {
-    name: "gpt-4-0314",
-    available: ENABLE_GPT4,
-  },
-  {
-    name: "gpt-4-32k",
-    available: ENABLE_GPT4,
-  },
-  {
-    name: "gpt-4-32k-0314",
-    available: ENABLE_GPT4,
-  },
+  // {
+  //   name: "gpt-4",
+  //   available: ENABLE_GPT4,
+  // },
+  // {
+  //   name: "gpt-4-0314",
+  //   available: ENABLE_GPT4,
+  // },
+  // {
+  //   name: "gpt-4-32k",
+  //   available: ENABLE_GPT4,
+  // },
+  // {
+  //   name: "gpt-4-32k-0314",
+  //   available: ENABLE_GPT4,
+  // },
   {
     name: "gpt-3.5-turbo",
     available: true,
   },
-  {
-    name: "gpt-3.5-turbo-0301",
-    available: true,
-  },
+  // {
+  //   name: "gpt-3.5-turbo-0301",
+  //   available: true,
+  // },
 ];
 
 export function limitNumber(
@@ -140,6 +140,7 @@ const DEFAULT_CONFIG: ChatConfig = {
   theme: Theme.Auto as Theme,
   tightBorder: true,
   sendPreviewBubble: false,
+
   disablePromptHint: false,
 
   modelConfig: {
